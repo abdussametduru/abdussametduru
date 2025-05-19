@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdussamet Duru - Özgeçmiş</title>
+  <style>
+    :root {
+      --color-bg-light: #f9f9f9;
+      --color-text-light: #222;
+      --color-bg-dark: #121212;
+      --color-text-dark: #eee;
+      --color-primary-light: #0077cc;
+      --color-primary-dark: #3399ff;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--color-bg-light);
+      color: var(--color-text-light);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body.dark-theme {
+      background-color: var(--color-bg-dark);
+      color: var(--color-text-dark);
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px 30px;
+      background: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.07);
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body.dark-theme .wrapper {
+      background: #222;
+      box-shadow: 0 0 25px rgba(255,255,255,0.1);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid var(--color-primary-light);
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    body.dark-theme .header {
+      border-color: var(--color-primary-dark);
+    }
+    .header h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: var(--color-primary-light);
+      letter-spacing: 1.5px;
+    }
+    body.dark-theme .header h1 {
+      color: var(--color-primary-dark);
+    }
+    .header p a {
+      text-decoration: none;
+      color: var(--color-primary-light);
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    body.dark-theme .header p a {
+      color: var(--color-primary-dark);
+    }
+    .header p a:hover {
+      color: #004a99;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    h2 {
+      border-bottom: 2px solid var(--color-primary-light);
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #004a99;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+    body.dark-theme h2 {
+      color: var(--color-primary-dark);
+      border-color: var(--color-primary-dark);
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 0;
+    }
+    ul li {
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      margin: 0;
+    }
+    /* Tema değiştirici buton */
+    #theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background-color: var(--color-primary-light);
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+    #theme-toggle:hover {
+      background-color: #005fa3;
+    }
+    body.dark-theme #theme-toggle {
+      background-color: var(--color-primary-dark);
+    }
+    body.dark-theme #theme-toggle:hover {
+      background-color: #2679ff;
+    }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Tema değiştirici">Koyu Tema</button>
+
+  <main class="wrapper">
+    <header class="header">
+      <h1>Abdussamet Duru</h1>
+      <p><a href="mailto:abdussametduru@hotmail.com" title="Maile Git">abdussametduru@hotmail.com</a></p>
+    </header>
+
+    <section class="about">
+      <h2>Hakkımda</h2>
+      <p>
+        2001 yılında Elazığ'da doğdum. Lise öğrenimimi Elazığ'da tamamladıktan sonra
+        hemşirelik programında iki yıl okudum. Daha sonra bu bölümü bırakarak
+        bilgisayar mühendisliğine geçiş yaptım. Şu anda Karabük Üniversitesi
+        bilgisayar mühendisliği 2. sınıf öğrencisiyim. Üniversitede destek personeli olarak çalışmaktayım.
+        Siber güvenlik ve yapay zeka alanlarına ilgi duyuyor, yenilikleri takip
+        ederek kendimi geliştirmeye devam ediyorum.
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>Eğitim</h2>
+      <ul>
+        <li>Karabük Üniversitesi, Bilgisayar Mühendisliği, 2. sınıf</li>
+        <li>Anadolu Üniversitesi, Sivil Hava Ulaştırma İşletmeciliği, 2. sınıf</li>
+        <li>Atatürk Üniversitesi, Büro Yönetimi ve Yönetici Asistanlığı, Mezun</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Deneyim</h2>
+      <p>Üniversitede destek personeli (2022 - )</p>
+    </section>
+
+    <section class="skills">
+      <h2>Beceriler</h2>
+      <ul>
+        <li>C Programlama Dili</li>
+        <li>HTML &amp; CSS</li>
+        <li>PHP</li>
+      </ul>
+    </section>
+
+    <section class="certificates">
+      <h2>Sertifikalar</h2>
+      <ul>
+        <li>C Dili Eğitimi</li>
+        <li>Diksiyon Eğitimi</li>
+        <li>İngilizce Eğitimi</li>
+        <li>Gitar Eğitimi</li>
+      </ul>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobiler</h2>
+      <p>Gitar çalmak ve yürüyüş yapmak.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Tema bilgisini localStorage'dan oku
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.add('dark-theme');
+        toggleButton.textContent = 'Açık Tema';
+      } else {
+        body.classList.remove('dark-theme');
+        toggleButton.textContent = 'Koyu Tema';
+      }
+    }
+
+    // Sayfa açılırken temayı uygula
+    applyTheme(currentTheme);
+
+    // Butona tıklandığında temayı değiştir ve localStorage'a kaydet
+    toggleButton.addEventListener('click', () => {
+      let theme = body.classList.contains('dark-theme') ? 'light' : 'dark';
+      applyTheme(theme);
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+</body>
+</html>
